@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Book a Car</h1>
+      </header>
+      <main>
+        <section id="form">
+          <h2>Contact Us</h2>
+
+          <form action="process.html" method="get" id="booking">
+            <div class="form-row">
+              <label for="contactname">Name</label>
+              <input
+                type="text"
+                name="contactname"
+                id="contactname"
+              ></div>
+              <div class="form-row">
+              <label for="Email">Emailaddress</label>
+              <input
+                type="text"
+                name="EmailAddress"
+                id="EmailAddress"
+              >
+            </div>
+            <div>
+              <h2>Do you have driver license?</h2>
+              <label>
+              <input type="radio" name="yesorno" value="Yes">Yes
+              <br>
+              <input type="radio" name="yesorno" value="no">no
+              </label>
+            </div>
+            <div class="form-row">
+              <P>Age</P>
+              <input type="number" min="17" max="80">
+            </div>
+            <div class="form-row">
+              <p>Booking date</p>
+              <input type="date">
+            </div>
+            <div class="form-row">
+              <p>Car</p>
+              <select name="car">
+                <p>Car</p>
+                <option value="ford focus">ford focus</option>
+                <option value="Hyundai Tucson">Hyundai Tucson</option>
+                <option value="Toyta Rav4">Toyta Rav4</option>
+                <option value="Renault Kadjar">Renault Kadjar</option>
+                <option value="Nissan Qashqai">Nissan Qashqai</option>
+                </select>
+            </div>
+            
+              <p>please provide any details that might be useful for us</p>
+            <div class="form-row">
+              <p>more detials(as much as you think we will need)</p>
+              <textarea></textarea>
+            </div>
+            <br><br>
+            <div class="form-row">
+              <input type="submit">
+              <input type="reset">
+            </div>
+          </form>
+        </section>
+        <section id="image">
+          <figure>
+            <img src="images/car.jfif" alt="Car" class="ui fluid image">
+            <figcaption>Car Rental</figcaption>
+          </figure>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
